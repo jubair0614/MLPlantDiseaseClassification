@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data folders
+data/raw/
+data/processed/
+data/samples/
+
+# Model files (saved weights, serialized models)
+models/
+*.h5
+*.pkl
+
+# Logs and reports
+logs/
+*.log
+*.txt
+
+# Environment files (if using Conda or virtualenv)
+env/
+.venv/
+venv/
+*.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Configurations and credentials (if any)
+config.yaml
+*.secret
+
+# Visual Studio Code settings
+.vscode/
+
+# Python virtual environment
+*.env
+*.venv
+
+# Package files
+*.egg-info/
+dist/
+build/
+
+# Ignore macOS system files
+._*
