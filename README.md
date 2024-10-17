@@ -11,6 +11,7 @@ MLPlantDiseaseClassification/
 │       ├── Potato_healthy/
 │       ├── Potato_Early_blight/
 │       └── Potato_Late_blight/
+│       └── ../
 ├── notebooks/
 │   └── dataExplore.ipynb
 ├── src/
@@ -57,28 +58,11 @@ Make sure you have the following software installed on your machine:
 
 Once the environment is set up and activated, you can run the main script. 
 
-1. Navigate to the `src/models/` directory:
+1. Navigate to the `MLPlantDiseaseClassification` directory:
 
    ```bash
-   cd src/models/
+   python main.py
    ```
-
-2. Run the `random_forest_model.py` script:
-
-   ```bash
-   python random_forest_model.py
-   ```
-
-This will execute the model training and evaluation process using the potato leaf images from the PlantVillage dataset.
-
-## Additional Notes
-
-- Ensure that you have downloaded the PlantVillage dataset and organized it in the specified directory structure under `data/PlantVillage/`.
-- The dataset folders should contain images organized in subfolders named after the disease classes (e.g., `Potato_healthy`, `Potato_Early_blight`, `Potato_Late_blight`).
-
-## Contribution
-
-Feel free to contribute to this project! If you'd like to add features or fix issues, please fork the repository and submit a pull request.
 
 ## License
 
