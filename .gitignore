@@ -13,11 +13,6 @@ data/raw/
 data/processed/
 data/samples/
 
-# Model files (saved weights, serialized models)
-models/
-*.h5
-*.pkl
-
 # Logs and reports
 logs/
 *.log

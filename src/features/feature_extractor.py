@@ -78,3 +78,16 @@ def extract_features_from_dataset(images, feature_type="hog"):
         feature_list.append(features)
     
     return np.array(feature_list)
+
+def extract_features(images):
+    features = []
+    
+    for img in images:
+        # Convert image to HSV color space
+        hsv_img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        # Calculate histogram
+        hist = cv2.calcHist([hsv_img], [0, 1], None, [8, 8], [0, 180, 0, 256])
+        hist = cv2.normalize(hist, hist).flatten()
+        features.append(hist)
+    
+    return np.array(features)

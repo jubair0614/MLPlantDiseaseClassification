@@ -1,6 +1,7 @@
 from src.data.data_loader import load_sample_data
 from src.data.data_loader import load_plantVillage_data
 from src.features.feature_extractor import extract_hog_features
+from src.models.random_forest_model import train_random_forest
 
 def main():
     # Define the path to the sample images directory
@@ -16,7 +17,7 @@ def main():
     for label in sample_labels:
         print(label)
 
-    # explore_dataset()
+    explore_dataset()
     print(extract_hog_features(sample_images[0]))
 
 
@@ -36,6 +37,8 @@ def explore_dataset():
     details(tomato_images, tomato_labels, "tomato")
     details(pepper_images, pepper_labels, "pepper")
     details(potato_images, potato_labels, "potato")
+
+    train_random_forest(potato_images, potato_labels)
 
 def details(images, labels, leaf_name):
     # Print the number of images and labels
