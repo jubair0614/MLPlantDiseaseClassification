@@ -13,6 +13,8 @@ data/raw/
 data/processed/
 data/samples/
 
+data/PlantVillage
+
 # Logs and reports
 logs/
 *.log
